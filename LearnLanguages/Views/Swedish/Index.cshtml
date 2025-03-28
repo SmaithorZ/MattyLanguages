@@ -1,0 +1,33 @@
+﻿@model List<PhrasesSE>
+
+<div class="container mt-5">
+    <h1 class="mb-4 text-center" style="color:#fdca03">Learn Swedish</h1>
+    <p class="mb-4 text-center">Learn Swedish by seeing common Phrases and Words!</p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow-sm text-center">
+                
+                <div class="card-body rounded" style="background-color:#015192">
+                    <h4 class="card-title" style="color:#fdca03">Swedish Phrases</h4>
+                    <a href="@Url.Action("PhrasesSE", "Swedish", new { language = "Swedish" })" class="btn btn-success m-2">
+                        💬 Common Phrases
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm text-center">
+                <div class="card-body rounded" style="background-color:#015192">
+                    <h4 class="card-title" style="color:#fdca03">Swedish Vocabulary</h4>
+                    <a href="@Url.Action("VocabulariesSE", "Swedish", new { language = "Swedish" })" class="btn btn-success m-2">
+                        📖 Common Words
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-4 text-center">
+        <a href="@Url.Action("Index", "Home", new { language = "Swedish" })" class="btn btn-success m-2">
+            Go Back
+        </a>
+    </div>

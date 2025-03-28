@@ -1,0 +1,32 @@
+﻿@model List<PhrasesPL>
+
+<div class="container mt-5">
+    <h1 class="mb-4 text-center">Learn Polish</h1>
+    <p class="mb-4 text-center">Learn Polish by seeing common Phrases and Words!</p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow-sm text-center">
+                <div class="card-body rounded" style="background-color:#C2143C">
+                    <h4 class="card-title" style="color:white">Polish Phrases</h4>
+                    <a href="@Url.Action("PhrasesPL", "Polish", new { language = "Polish" })" class="btn btn-success m-2">
+                        💬 Common Phrases
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm text-center">
+                <div class="card-body rounded" style="background-color:#C2143C">
+                    <h4 class="card-title" style="color:white">Polish Vocabulary</h4>
+                    <a href="@Url.Action("VocabulariesPL", "Polish", new { language = "Polish" })" class="btn btn-success m-2">
+                        📖 Common Words
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-4 text-center">
+        <a href="@Url.Action("Index", "Home", new { language = "Swedish" })" class="btn btn-success m-2">
+            Go Back
+        </a>
+    </div>
